@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>The Shoe Company</title>
+  <link href="./output.css" rel="stylesheet">
+  <script src='script.js' defer></script>
+</head>
+<body class="bg-black text-white relative">
+<!------------------------------------------------------------------------------------------------------->
+  <header class="fixed w-full h-32 flex justify-between px-8 font-semibold">
+    <div id="name-and-logo">
+      <img class="w-32 h-32" src="/assets/shoe-company-logo-1.png" alt="logo">
+      <span class="absolute bottom-1.5">The Shoe Company</span>
+    </div>
+<!------------------------------------------------------------------------------------------------------->
+    <nav id="navbar" class="flex items-center">
+      <ul class="flex gap-16 text-3xl">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#how-it-works">How It Works?</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+  <section id="hero" class="bg-[url('../assets/hero-background-image.png')] bg-contain h-dvh w-full bg-right bg-no-repeat flex items-center justify-center gap-16 mb-24">
+    <h1 class="text-8xl font-bold leading-28 uppercase">The<br> Shoe<br> Company<br></h1>
+    <img src="/assets/hero-image.png" alt="hero-image">
+  </section>
+<!------------------------------------------------------------------------------------------------------->
+
+  <section id="how-it-works">
+    <h2 class="w-3xl font-bold text-5xl text-center mx-auto">Have they finally made the perfect workout shoe?</h2>
+
+    <div class="relative top-80 tracking-tighter">
+      <div class="absolute left-48">
+        <h3 class="text-4xl font-semibold mb-2">The Heel</h3>
+        <p class="text-2xl">The heel is well-built, has<br> appropriate elevation and is<br> not too rigid.</p>
+        <img class="absolute mt-[-1.5em] left-36" src="/assets/double-down-arrow.png" alt="double-down-arrow">
+      </div>
+
+      <img class="mx-auto mt-[-12em]" src="/assets/how-it-works-image-1.png" alt="Shoe-Image">
+      
+      <div class="absolute top-24 right-96">
+        <img class="absolute top-[-4em] right-72" src="/assets/single-down-arrow.png" alt="single-down-arrow">
+        <h3 class="text-4xl font-semibold mb-2">The Front</h3>
+        <p class="text-2xl">The front is comfortable and<br> adjusts well to the shape of<br> your foot.</p>
+      </div>
+
+      <div class="absolute left-[30em] bottom-10">
+        <img class="absolute top-[-6em] right-[-8em]" src="/assets/twisted-up-arrow.png" alt="twisted-up-arrow">
+        <h3 class="text-4xl font-semibold mb-2">Traction</h3>
+        <p class="text-2xl">The shoe has good traction<br> and doesn't slip easily.</p>
+      </div>
+    </div>
+  </section>
+<!------------------------------------------------------------------------------------------------------->
+</body>
+</html>
