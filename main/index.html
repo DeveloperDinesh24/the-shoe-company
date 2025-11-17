@@ -8,15 +8,20 @@
   <script src='script.js' defer></script>
 </head>
 <body class="bg-black text-white relative flex flex-col gap-48 ">
-<!------------------------------------------------------------------------------------------------------->
-  <header class="fixed z-50 w-full h-32 flex justify-between px-8 font-semibold">
-    <a href="#"><div id="name-and-logo">
-      <img class="w-32 h-32" src="/assets/shoe-company-logo-1.png" alt="logo">
-      <span class="absolute bottom-1.5">The Shoe Company</span>
+<!-- ----------------------------------------------------------------------------------------------------->
+  <!-- <header class="fixed z-50 w-full h-32 flex justify-between px-8 font-semibold">
+    <a href="#"><div class="" id="name-and-logo">
+      <img class="lg:w-32 lg:h-32 w-18 h-18" src="/assets/shoe-company-logo-1.png" alt="logo">
+      <span class="lg:absolute lg:bottom-0 lg:text-2xl text-sm">The Shoe Company</span>
     </div></a>
-<!------------------------------------------------------------------------------------------------------->
-    <nav id="navbar" class="flex items-center">
-      <ul class="flex gap-16 text-3xl">
+
+    <div id="hamburger-icon" class="flex lg:hidden flex-col gap-1 h-fit absolute right-8 top-4">
+        <div class="w-6 h-[3px] rounded-sm bg-white"></div>
+        <div class="w-6 h-[3px] rounded-sm bg-white"></div>
+        <div class="w-6 h-[3px] rounded-sm bg-white"></div>
+      </div>
+    <nav id="navbar" class="hidden lg:flex lg:text-2xl xl:text-3xl items-center">
+      <ul class="flex gap-16">
         <li class="hover:text-blue-300"><a href="#hero">Home</a></li>
         <li class="hover:text-blue-300"><a href="#how-it-works">How It Works?</a></li>
         <li class="hover:text-blue-300"><a href="#about-us">About</a></li>
@@ -24,13 +29,37 @@
         <li class="hover:text-blue-300"><a href="#contact-us">Contact Us</a></li>
       </ul>
     </nav>
-  </header>
+    <nav class="flex flex-col lg:hidden">
+      <ul class="flex flex-col gap-16 text-2xl">
+        <li class="hover:text-blue-300"><a href="#hero">Home</a></li>
+        <li class="hover:text-blue-300"><a href="#how-it-works">How It Works?</a></li>
+        <li class="hover:text-blue-300"><a href="#about-us">About</a></li>
+        <li class="hover:text-blue-300"><a href="#testimonials">Testimonials</a></li>
+        <li class="hover:text-blue-300"><a href="#contact-us">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header> -->
 <!------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------------->
-  <section id="hero" class="bg-[url('../assets/hero-background-image.png')] bg-contain h-dvh w-full bg-right bg-no-repeat flex items-center justify-center gap-16">
-    <h1 class="text-8xl font-bold leading-28 uppercase">The<br> Shoe<br> Company<br></h1>
-    <img src="/assets/hero-image.png" alt="hero-image">
-  </section>
+  <section
+  id="hero"
+  class="bg-[url('../assets/hero-background-image.png')] bg-cover lg:bg-contain bg-right bg-no-repeat 
+         min-h-dvh w-full flex flex-col items-center justify-center gap-6
+         lg:flex-row lg:justify-center lg:items-center lg:gap-12 xl:gap-20">
+
+  <h1
+    class="text-5xl leading-tight font-bold uppercase text-center
+           lg:text-left lg:text-6xl xl:text-8xl xl:leading-[1.1]">
+    The<br>Shoe<br>Company
+  </h1>
+
+  <img
+    class="w-64 lg:w-96 xl:w-[500px]"
+    src="../assets/hero-image.png"
+    alt="hero-image"
+  />
+</section>
+
 <!------------------------------------------------------------------------------------------------------->
 
   <section id="how-it-works" class="">
